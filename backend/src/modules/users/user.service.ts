@@ -5,7 +5,6 @@ import * as bcrypt from 'bcrypt';
 import {CreateUserDto} from "./dto";
 import {AppError} from "../../common/errors";
 
-
 @Injectable()
 export class UserService {
     constructor(@InjectModel(User) private readonly userRepository: typeof User) {}
