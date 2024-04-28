@@ -7,5 +7,7 @@ export const AppError = {
     USER_EMAIL_STRING: 'Почта пользователя должна быть строкой',
     USER_EMAIL_IS_EMPTY: 'Почта пользователя не должна быть пустой',
     USER_PASS_STRING: 'Пароль должен быть строкой',
-    USER_PASS_IS_EMPTY: 'Пароль не должен быть пустым'
+    USER_PASS_IS_EMPTY: 'Пароль не должен быть пустым',
+    USER_NOT_EXIST: 'Пользователя не существует',
+    WRONG_DATA: 'Неверная почта или пароль'
 }
