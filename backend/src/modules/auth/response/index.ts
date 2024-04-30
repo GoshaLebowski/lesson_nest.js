@@ -15,7 +15,6 @@ export class AuthUserResponse {
     @IsString({message: AppError.USER_EMAIL_STRING})
     email: string;
 
-    @ApiProperty()
     @IsString({message: AppError.USER_PASS_STRING})
     password: string;
 
