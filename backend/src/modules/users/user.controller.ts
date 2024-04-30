@@ -17,6 +17,8 @@ export class UserController {
         return this.userService.updateUser(user.email, updateDto);
     }
 
+    @ApiTags('API')
+    @ApiResponse({status: 200, type: UpdateUserDTO})
     @UseGuards(JwtAuthGuard)
     @Delete()
     deleteUser(@Req() req): Promise<boolean> {
