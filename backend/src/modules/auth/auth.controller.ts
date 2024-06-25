@@ -12,7 +12,7 @@ export class AuthController {
     @ApiTags('API')
     @ApiResponse({status: 201})
     @Post('register')
-    register (@Body() dto: CreateUserDTO): Promise<CreateUserDTO> {
+    register (@Body() dto: CreateUserDTO): Promise<AuthUserResponse> {
         return this.authService.registerUsers(dto)
     }
 
